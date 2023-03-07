@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tiktok/constants/gaps.dart';
+import 'package:flutter_tiktok/screens/sign_up/sign_up_screen.dart';
 
 void main() {
   runApp(const TikTokApp());
@@ -15,15 +15,7 @@ class TikTokApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: const Color(0xFFE9435A),
       ),
-      home: Container(
-        child: Row(
-          children: const [
-            Text('data'),
-            Gaps.h20,
-            Text('data'),
-          ],
-        ),
-      ),
+      home: const SignUpScreen(),
     );
   }
 }
